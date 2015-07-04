@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `SwapChain` struct in crate `directx`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, SwapChain">
+
+    <title>directx::dxgi::SwapChain - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='../index.html'>directx</a>::<wbr><a href='index.html'>dxgi</a></p><script>window.sidebarCurrent = {name: 'SwapChain', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>directx</a>::<wbr><a href='index.html'>dxgi</a>::<wbr><a class='struct' href=''>SwapChain</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-826' class='srclink' href='../../src/directx/dxgi/swapchain.rs.html#10-12' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct SwapChain {
+    // some fields omitted
+}</pre><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl <a class='struct' href='../../directx/dxgi/struct.SwapChain.html' title='directx::dxgi::SwapChain'>SwapChain</a></code></h3><div class='impl-items'><h4 id='method.from_raw' class='method'><code>unsafe fn <a href='#method.from_raw' class='fnname'>from_raw</a>(raw: <a class='struct' href='../../com_rs/comptr/struct.ComPtr.html' title='com_rs::comptr::ComPtr'>ComPtr</a>&lt;<a class='struct' href='../../directx_sys/dxgi/dxgi1_0/interfaces/struct.IDXGISwapChain.html' title='directx_sys::dxgi::dxgi1_0::interfaces::IDXGISwapChain'>IDXGISwapChain</a>&gt;) -&gt; <a class='struct' href='../../directx/dxgi/struct.SwapChain.html' title='directx::dxgi::SwapChain'>SwapChain</a></code></h4>
+<h4 id='method.present' class='method'><code>fn <a href='#method.present' class='fnname'>present</a>(&amp;self, sync_interval: <a href='http://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>, flags: <a class='struct' href='../../directx_sys/dxgi/dxgi1_0/enums/struct.PresentFlags.html' title='directx_sys::dxgi::dxgi1_0::enums::PresentFlags'>PresentFlags</a>) -&gt; <a class='type' href='../../directx/type.HResult.html' title='directx::HResult'>HResult</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>&gt;</code></h4>
+<h4 id='method.get_buffer' class='method'><code>fn <a href='#method.get_buffer' class='fnname'>get_buffer</a>&lt;T&gt;(&amp;self, buffer: <a href='http://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>) -&gt; <a class='type' href='../../directx/type.HResult.html' title='directx::HResult'>HResult</a>&lt;<a class='struct' href='../../com_rs/comptr/struct.ComPtr.html' title='com_rs::comptr::ComPtr'>ComPtr</a>&lt;T&gt;&gt; <span class='where'>where T: <a class='trait' href='../../com_rs/comptr/trait.ComInterface.html' title='com_rs::comptr::ComInterface'>ComInterface</a></span></code></h4>
+<h4 id='method.fullscreen' class='method'><code>fn <a href='#method.fullscreen' class='fnname'>fullscreen</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.set_fullscreen' class='method'><code>fn <a href='#method.set_fullscreen' class='fnname'>set_fullscreen</a>(&amp;self, state: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></h4>
+<h4 id='method.containing_output' class='method'><code>fn <a href='#method.containing_output' class='fnname'>containing_output</a>(&amp;self) -&gt; <a class='struct' href='../../directx/dxgi/struct.Output.html' title='directx::dxgi::Output'>Output</a></code></h4>
+<h4 id='method.desc' class='method'><code>fn <a href='#method.desc' class='fnname'>desc</a>(&amp;self) -&gt; <a class='struct' href='../../directx_sys/dxgi/dxgi1_0/structs/struct.SwapChainDesc.html' title='directx_sys::dxgi::dxgi1_0::structs::SwapChainDesc'>SwapChainDesc</a></code></h4>
+<h4 id='method.frame_statistics' class='method'><code>fn <a href='#method.frame_statistics' class='fnname'>frame_statistics</a>(&amp;self) -&gt; <a class='struct' href='../../directx_sys/dxgi/dxgi1_0/structs/struct.FrameStatistics.html' title='directx_sys::dxgi::dxgi1_0::structs::FrameStatistics'>FrameStatistics</a></code></h4>
+<h4 id='method.last_present_count' class='method'><code>fn <a href='#method.last_present_count' class='fnname'>last_present_count</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+            <p>
+                Search functions by type signature (e.g.
+                <code>vec -> usize</code>)
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "directx";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script async src="../../search-index.js"></script>
+</body>
+</html>

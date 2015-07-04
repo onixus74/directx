@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["AdapterDesc2",""],["ModeDesc1",""],["OutDuplDesc",""],["OutDuplFrameInfo",""],["OutDuplMoveRect",""],["OutDuplPointerPosition",""],["OutDuplPointerShapeInfo",""],["PresentParameters",""],["SwapChainDesc1",""],["SwapChainFullscreenDesc",""]]});

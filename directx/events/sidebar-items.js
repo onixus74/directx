@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["KeyCode","Friendly names for Windows VK_* constants"],["KeyboardEventType",""],["MouseEventType",""],["WindowEvent","Window events"],["WindowType","Window type"]]});

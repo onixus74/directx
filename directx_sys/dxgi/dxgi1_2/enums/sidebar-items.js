@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["DXGI_OUTDUPL_POINTER_SHAPE_TYPE_COLOR",""],["DXGI_OUTDUPL_POINTER_SHAPE_TYPE_MASKED_COLOR",""],["DXGI_OUTDUPL_POINTER_SHAPE_TYPE_MONOCHROME",""]],"enum":[["AlphaMode",""],["ComputePreemptionGranularity",""],["GraphicsPreemptionGranularity",""],["OfferResourcePriority",""],["Scaling",""]],"struct":[["OutDuplPointerShapeType",""]]});

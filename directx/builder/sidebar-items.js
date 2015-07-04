@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["WindowBuilder","Window builder"]]});

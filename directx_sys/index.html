@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `directx_sys` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, directx_sys">
+
+    <title>directx_sys - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'directx_sys', ty: 'mod', relpath: '../'};</script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>directx_sys</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-0' class='srclink' href='../src/directx_sys/lib.rs.html#1-66' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'>
+<h1 id="directx-sys-0.0.5" class='section-header'><a
+                           href="#directx-sys-0.0.5">directx-sys 0.0.5</a></h1>
+<p>Rust FFI bindings for the DirectX API.</p>
+
+<h1 id="components" class='section-header'><a
+                           href="#components">Components</a></h1>
+<ul>
+<li><a href="dxgi/index.html">DXGI</a> - mostly complete but untested.</li>
+<li><a href="d3d11/index.html">D3D11</a> - 11.0 API complete but untested.
+11.1/11.2 not yet implemented.</li>
+<li>D3DCompiler - not yet implemented.</li>
+<li><a href="d2d/index.html">Direct2D</a> - 1.0 API mostly complete but untested.
+1.1/1.2 not yet implemented.</li>
+<li><a href="dwrite/index.html">DirectWrite</a> - 1.0 API complete but untested.
+1.1/1.2 not yet implemented.</li>
+<li>XAudio2 - not yet implemented.</li>
+<li>XInput - not yet implemented.</li>
+</ul>
+
+<h1 id="unsupported-components" class='section-header'><a
+                           href="#unsupported-components">Unsupported components</a></h1>
+<p>The following DirectX components are considered deprecated so I will not be
+writing bindings for them:</p>
+
+<ul>
+<li>D3D9/10 - use D3D11 instead.</li>
+<li>DirectDraw - use Direct2D instead</li>
+<li>DirectInput - Use XInput instead</li>
+<li>DirectSound - use XAudio2 instead.</li>
+</ul>
+</div><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='mod' href='d2d/index.html'
+                               title='directx_sys::d2d'>d2d</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='mod' href='d3d11/index.html'
+                               title='directx_sys::d3d11'>d3d11</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='mod' href='dwrite/index.html'
+                               title='directx_sys::dwrite'>dwrite</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='mod' href='dxgi/index.html'
+                               title='directx_sys::dxgi'>dxgi</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+            <p>
+                Search functions by type signature (e.g.
+                <code>vec -> usize</code>)
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "directx_sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

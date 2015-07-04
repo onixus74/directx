@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["DXGI_SHARED_RESOURCE_READ",""],["DXGI_SHARED_RESOURCE_WRITE",""]]});

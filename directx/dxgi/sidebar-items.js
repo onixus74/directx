@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Adapter",""],["AdapterIter",""],["Factory",""],["Output",""],["OutputIter",""],["SwapChain",""]]});
