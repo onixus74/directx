@@ -1,0 +1,23 @@
+[package]
+name = "directx"
+version = "0.0.1"
+
+description = "High-level Rust wrapper for the DirectX API."
+repository = "https://github.com/Eljay/directx"
+documentation = "http://eljay.github.io/directx/directx/index.html"
+
+authors = ["Lee Jeffery <lee@leejeffery.co.uk>"]
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+com-rs = "0.1.2"
+directx-sys = "0.0.5"
+kernel32-sys = { version = "*", optional = true }
+libc = "*"
+user32-sys = { version = "*", optional = true }
+winapi = "*"
+
+[features]
+default = ["window"]
+window = ["kernel32-sys", "user32-sys"]
